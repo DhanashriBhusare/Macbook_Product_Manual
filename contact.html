@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4CAF50, #3b5998);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        /* Container for the whole contact section */
+        .contact-container {
+            background-color: #fff;
+            padding: 40px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #333;
+        }
+
+        /* Heading */
+        .contact-container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Input and Textarea Styles */
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            border-color: #3b5998;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        /* Button Styling */
+        .contact-container button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            background: linear-gradient(90deg, #4CAF50, #3b5998);
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-container button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #3b5998, #4CAF50);
+        }
+
+        /* Social media icon container */
+        .social-media-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Social media icon styling */
+        .social-media-icons a {
+            font-size: 20px;
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .social-media-icons a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .facebook { background-color: #3b5998; }
+        .twitter { background-color: #1DA1F2; }
+        .instagram { background-color: #E1306C; }
+        .linkedin { background-color: #0077B5; }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .footer:hover {
+            color: #333;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Form -->
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+       <!-- Social Media Icons -->
+<div class="social-media-icons text-center my-4">
+    <a href="fb.jpg" title="Facebook">
+        <img src="fb.jpg" alt="Facebook" style="width: 40px; height: 40px; margin: 0 10px;">
+    </a>
+    <a href="twitter.jpg" title="Twitter">
+        <img src="twiteer.jpg" alt="Twitter" style="width: 40px; height: 40px; margin: 0 10px;">
+    </a>
+    <a href="index.html" title="Instagram">
+        <img src="insta.jpg" alt="Instagram" style="width: 40px; height: 40px; margin: 0 10px;">
+    </a>
+    <a href="li.jpg" title="LinkedIn">
+        <img src="li.jpg" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 10px;">
+    </a>
+</div>
+
+        <!-- Footer Text -->
+        <div class="footer">
+            <p>&copy; 2024 Contact Us - All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+</html>
